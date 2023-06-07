@@ -1,39 +1,62 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.top-navbar{
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+p{
+    text-align: center;
+}
+
+/* Top Navbar */
+
+.top-navbar {
     width: 100%;
     height: 8vh;
+    padding-right: 40px;
     background-color: #a9a9a926;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
 }
-.top-icons{
+
+.top-icons {
     margin-left: 45px;
 }
-.top-icons i{
+
+.top-icons i {
     font-size: 20px;
     color: #1c1c50;
     margin-left: 10px;
     cursor: pointer;
 }
-.other-links{
+
+.other-links {
     margin-right: 33px;
 }
-.other-links i{
+
+.other-links i {
     color: #1c1c50;
     font-size: 20px;
     margin-left: 10px;
     cursor: pointer;
 }
-#btn-login{
+
+#btn-login {
     width: 100px;
     border: 2px solid #1c1c50;
     color: #1c1c50;
@@ -43,24 +66,13 @@ html{
     transition: 0.5s ease;
     cursor: pointer;
 }
-#btn-login a{
-    text-decoration: none;
-    color: #1c1c50;
-    transition: 0.5s ease;
-}
-#btn-login a:hover{
-    background-color:#1c1c50 ;
-    color: white;
-}
-#btn-login:hover{
+
+#btn-login:hover {
     background-color: #1c1c50;
     color: white;
-
 }
 
-
-
-#btn-signup{
+#btn-signup {
     width: 100px;
     border: 2px solid #1c1c50;
     color: #1c1c50;
@@ -70,87 +82,92 @@ html{
     transition: 0.5s ease;
     cursor: pointer;
 }
-#btn-signup a{
-    text-decoration: none;
-    color: #1c1c50;
-    transition: 0.5s ease;
-}
-#btn-signup a:hover{
-    background-color:#1c1c50 ;
-    color: white;
-}
-#btn-signup:hover{
+
+#btn-signup:hover {
     background-color: #1c1c50;
     color: white;
 
 }
 
+/* Navbar */
 
-.home-section{
+.home-section {
     width: 100%;
-    height: 94vh;
+    height: 70vh;
     background-color: #a9a9a926;
 }
-#navbar{
+
+#navbar {
     background-color: #1c1c50;
     font-size: 16px;
-    font-family: 'Roboto Slab', serif;
 }
-#navbar .nav-link{
+
+#navbar .nav-link {
     color: white;
     font-weight: bold;
     margin-left: 5px;
     transition: 0.5s ease;
 }
-#navbar .nav-link:hover{
+
+#navbar .nav-link:hover {
     color: white;
     border-radius: 5px;
 }
-.dropdown li a{
+
+.dropdown li a {
     color: white;
 }
-#search-btn{
+
+#search-btn {
     color: white;
     border: 1px solid white;
 }
-#search-btn:hover{
+
+#search-btn:hover {
     background-color: #1c1c50;
 
 }
-.home{
+
+.home {
     display: flex;
-    text-align:left;
+    text-align: left;
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
     z-index: 0;
-    font-family: 'Roboto Slab', serif;
 }
-.home .img{
+
+.home .img {
     flex: 1 1 400px;
 }
-.home .img img{
+
+.home .img img {
     width: 100%;
 }
-.home .content{
+
+.home .content {
     flex: 1 1 400px;
     margin-top: 100px;
 }
-.content h3{
+
+.content h3 {
     margin-left: 70px;
     font-size: 50px;
     text-shadow: 1px 1px 1px black;
     color: #1c1c50;
     font-weight: bold;
 }
-.content h3 span{
+
+.content h3 span {
     font-size: 40px;
 }
-.content p{
+
+.content p {
     margin-left: 70px;
     color: #1c1c50;
 }
-.content #shopnow{
+
+.content #shopnow {
     margin-left: 70px;
     width: 200px;
     height: 38px;
@@ -159,22 +176,26 @@ html{
     transition: 0.5s ease;
     cursor: pointer;
 }
-.content #shopnow:hover{
+
+.content #shopnow:hover {
     background-color: #1c1c50;
-    color:white
+    color: white
 }
-#top-cards{
-    margin-top: 30px;
-    font-family: 'Roboto Slab', serif;
+
+#top-cards {
+    margin-top:50px;
 
 }
-#top-cards .card img{
-     height: 60vh;
+
+#top-cards .card img {
+    height: 25vh;
 }
-#top-cards h5{
+
+#top-cards h5 {
     color: #1c1c50;
     font-weight: bold;
 }
+
 #top-cards button {
     width: 150px;
     height: 33px;
@@ -185,31 +206,37 @@ html{
     transition: 0.5s ease;
     cursor: pointer;
 }
-#top-cards button:hover{
+
+#top-cards button:hover {
     background-color: #1c1c50;
     color: white;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 50vh;
     margin-top: 50px;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./image/banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./image/banner.jpg);
 }
-.banner .content{
+
+.banner .content {
     text-align: center;
     padding-top: 100px;
 }
-.banner .content h1{
+
+.banner .content h1 {
     color: white;
     text-shadow: 1px 1px 1px black;
     letter-spacing: 3px;
 }
-.banner .content p{
-    color:white;
+
+.banner .content p {
+    color: white;
     text-shadow: 1px 1px 1px black;
     letter-spacing: 3px;
 }
-.bannerbtn  button{
+
+.bannerbtn button {
     width: 150px;
     height: 38px;
     background: transparent;
@@ -218,60 +245,83 @@ html{
     transition: 0.5s ease;
     cursor: pointer;
 }
-.bannerbtn button:hover{
+
+.bannerbtn button:hover {
     background-color: #1c1c50;
     border: none;
 }
-#product{
-    font-family: 'Roboto Slab', serif;
+
+#product {
     margin-top: 100px;
 
 }
-#product .cards .card{
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+
+#product .cards .card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#product h1{
+.card{
+    height: fit-content;
+    padding: 20px;
+}
+.cardimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#product h1 {
     margin-top: 30px;
     color: #1c1c50;
     text-shadow: 1px 1px 1px black;
 }
-#product h3{
+
+#product h3 {
     letter-spacing: 3px;
     color: #1c1c50;
     text-shadow: 0px 1px 1px black;
     font-weight: bold;
 }
-#product h5 span{
+
+#product h5 span {
     float: right;
     color: #1c1c50;
     cursor: pointer;
 }
-.checked{
+
+.checked {
     color: rgb(254, 174, 12);
 }
-#viewmore{
+
+#viewmore {
     display: flex;
     justify-content: center;
     margin: auto;
-    text-decoration: none;
     width: 200px;
+    text-decoration: none;
     height: 32px;
     color: #1c1c50;
     letter-spacing: 3px;
     font-weight: bold;
     background: transparent;
-    border: 2px solod #1c1c50;
+    border: 2px solid #1c1c50;
     transition: 0.5s ease;
+
 }
-#viewmore:hover{
+
+#viewmore:hover {
     background-color: #1c1c50;
     color: white;
 }
 
-#offer{
+#offer {
     margin-top: 50px;
 }
-#offer i{
+
+#offer i {
     font-size: 60px;
     color: #1c1c50;
 }
@@ -280,21 +330,25 @@ html{
     background: #1c1c50;
     columns: #f6f0f0;
 }
+
 .footer a {
-    color:white;
+    color: white;
 
 }
+
 .footer-container {
     max-width: 1100px;
     margin: auto;
     padding: 40px;
 
 }
+
 .footer-lists {
     display: flex;
     justify-content: space-between;
 
 }
+
 .footer-lists .list-head {
     text-transform: uppercase;
     color: white;
@@ -304,28 +358,32 @@ html{
 
 
 /* banner2 */
-.banner2{
+.banner2 {
     width: 100%;
     height: 50vh;
     margin-top: 50px;
     background-color: white;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./image/banner2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./image/banner2.jpg);
 }
-.banner2 .content2{
+
+.banner2 .content2 {
     text-align: center;
     padding-top: 100px;
 }
-.banner2 .content2 h1{
+
+.banner2 .content2 h1 {
     color: white;
     text-shadow: 1px 1px 1px black;
     letter-spacing: 3px;
 }
-.banner2 .content2 p{
-    color:white;
+
+.banner2 .content2 p {
+    color: white;
     text-shadow: 1px 1px 1px black;
     letter-spacing: 3px;
 }
-.bannerbtn2  button{
+
+.bannerbtn2 button {
     width: 150px;
     height: 38px;
     background: transparent;
@@ -334,32 +392,39 @@ html{
     transition: 0.5s ease;
     cursor: pointer;
 }
-.bannerbtn2 button:hover{
+
+.bannerbtn2 button:hover {
     background-color: #1c1c50;
     border: none;
 }
-#about{
+
+#about {
     margin-top: 50px;
 }
-#about h1{
-    text-align: center;    
+
+#about h1 {
+    text-align: center;
     font-weight: bold;
     color: #1c1c50;
 }
+
 /* about */
-#contact{
+#contact {
     margin-top: 50px;
 }
-#contact h1{
+
+#contact h1 {
     color: #1c1c50;
     text-shadow: 0px 0px 1px black;
 }
-#contact .card{
+
+#contact .card {
     height: 80px;
     margin-top: 20px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#contact .card i{
+
+#contact .card i {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 15px;
@@ -367,13 +432,16 @@ html{
     font-weight: bold;
     letter-spacing: 3px;
 }
-#contact .card h6{
+
+#contact .card h6 {
     margin-left: 10px;
     margin-top: 10px;
     letter-spacing: 3px;
     font-weight: bold;
     color: #1c1c50;
-}#messagebtn button{
+}
+
+#messagebtn button {
     margin-top: 30px;
     width: 200px;
     height: 33px;
@@ -385,45 +453,15 @@ html{
     letter-spacing: 3px;
     transition: 0.5s ease;
 }
-#messagebtn button:hover{
+
+#messagebtn button:hover {
     background-color: #1c1c50;
     color: white;
 }
 
 
-@media screen and (max-width:800px) {
-    .content h3{
-        margin-top: 50px;
-        font-size: 40px;
-    }
-    .content p{
-        margin-top: 50px;
-    }
-    .content #shopnow{
-        margin-left: 50px;
-    }
-}
-@media screen and (max-width:570px) {
-    .content h3{
-        margin-top: 20px;
-    }
-    .content p{
-        margin-top: 20px;
-    }
-    .content #shopnow{
-        margin-left: 20px;
-    }
-}
-@media screen and (max-width:799px) {
-.home-section{
-    height: 100vh;
-}
-.footer-lists {
-    flex-direction: column;
-   }
-   
-}
-.arrow{
+
+.arrow {
     position: fixed;
     background-color: #1c1c50;
     border-radius: 50px;
@@ -434,18 +472,20 @@ html{
     align-items: center;
     line-height: 50px;
 }
-.login{
+
+.login {
     width: 50%;
     margin: 20px;
-    font-family: 'Roboto Slab', serif;
 }
-#sidel{
+
+#sidel {
     background-color: #1c1c50;
     height: 75vh;
     border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#sidel h3{
+
+#sidel h3 {
     color: white;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
@@ -453,53 +493,63 @@ html{
     align-items: center;
     text-align: center;
 }
-#sidel p{
+
+#sidel p {
     color: white;
     font-weight: bold;
     align-items: center;
     text-align: center;
 }
-#btn{
+
+#btn {
     align-items: center;
     text-align: center;
     border: 2px solid white;
     border-radius: 10px;
 }
-#btn a{
+
+#btn a {
     text-decoration: none;
     color: white;
 }
-#sidel2{
+
+#sidel2 {
     background-color: white;
     border-radius: 5px;
-    box-shadow: rgba(100,100,111,0.2) 0px 7px 30px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 30px 0px;
     align-items: center;
     text-align: center;
 }
-#sidel2 h3{
+
+#sidel2 h3 {
     margin-top: 50px;
     color: #1c1c50;
     font-weight: bold;
 
 }
-#sidel2 input{
+
+#sidel2 input {
     width: 500px;
     margin-top: 20px;
     height: 36px;
     align-items: center;
 }
-#sidel2 p{
+
+#sidel2 p {
     margin-top: 20px;
     cursor: pointer;
 }
-#sidel2 .icons i{
+
+#sidel2 .icons i {
     margin-top: 10px;
     cursor: pointer;
 }
-#login{
+
+#login {
     margin-top: 10px;
 }
-#login button{
+
+#login button {
     width: 200px;
     height: 32px;
     color: white;
@@ -513,80 +563,145 @@ html{
 
 
 
+@media screen and (max-width:800px) {
+    .content h3 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
 
+    .content p {
+        margin-top: 50px;
+    }
 
-@media screen and (max-width: 500px){
-    .top-icons{
+    .content #shopnow {
+        margin-left: 50px;
+    }
+
+    #offer {
+        margin: 80px;
+    }
+
+    
+}
+
+@media screen and (max-width:570px) {
+    .content h3 {
+        margin-top: 20px;
+    }
+
+    .content p {
+        margin-top: 20px;
+    }
+
+    .content #shopnow {
+        margin-left: 70px;
+    }
+
+    #offer {
+        margin: 80px;
+    }
+}
+
+@media screen and (max-width:799px) {
+    .home-section {
+        height: 100vh;
+    }
+
+    .footer-lists {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .top-icons {
         margin-left: 30px;
     }
-    .top-icons i{
+
+    .top-icons i {
         font-size: 15px;
     }
-    .other-links i{
+
+    .other-links i {
         font-size: 15px;
     }
+
     #btn-login {
         width: 60px;
         height: 5vh;
     }
-    #btn-signup{
+
+    #btn-signup {
         width: 70px;
         height: 5vh;
     }
 
 }
-@media screen and (max-width:350px){
-    .top-icons{
+
+@media screen and (max-width:350px) {
+    .top-icons {
         margin-left: 10px;
     }
-    .top-icons i{
+
+    .top-icons i {
         font-size: 10px;
     }
-    .other-links{
+
+    .other-links {
         margin-right: 10px;
     }
-    .other-links i{
+
+    .other-links i {
         font-size: 10px;
     }
+
     #btn-login {
         width: 50px;
         height: 5vh;
         font-size: 12px;
     }
-    #btn-signup{
+
+    #btn-signup {
         width: 60px;
         height: 5vh;
         font-size: 12px;
     }
 
 }
-@media screen and (max-width:350px){
-    .top-icons{
+
+@media screen and (max-width:350px) {
+    .top-icons {
         margin-left: 5px;
     }
-    .top-icons i{
+
+    .top-icons i {
         font-size: 12px;
     }
-    .other-links{
+
+    .other-links {
         margin-right: 10px;
     }
-    .other-links i{
+
+    .other-links i {
         font-size: 12px;
     }
+
     #btn-login {
         width: 40px;
         height: 5vh;
         font-size: 10px;
     }
-    #btn-signup{
+
+    #btn-signup {
         width: 50px;
         height: 5vh;
         font-size: 10px;
     }
 }
- @media screen and (max-width:992px) {
-    #sidel2 input{
+
+@media screen and (max-width:992px) {
+    #sidel2 input {
         width: 200px;
     }
-    
- }   
+
+}
