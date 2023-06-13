@@ -568,6 +568,13 @@ p{
         margin-top: 50px;
         font-size: 40px;
     }
+    .card{
+        margin-top: 72px;
+    }
+
+    .home .content{
+        flex: 0 0 0px;
+    }
 
     .content p {
         margin-top: 50px;
@@ -577,9 +584,6 @@ p{
         margin-left: 50px;
     }
 
-    #offer {
-        margin: 80px;
-    }
 
     
 }
@@ -597,14 +601,19 @@ p{
         margin-left: 70px;
     }
 
-    #offer {
-        margin: 80px;
-    }
 }
 
 @media screen and (max-width:799px) {
     .home-section {
-        height: 100vh;
+        height: 120vh;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .shop-card{
+        width: 51%;
     }
 
     .footer-lists {
